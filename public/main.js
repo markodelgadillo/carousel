@@ -16,7 +16,7 @@ setInterval(function() {
     carousel.current = 0
   }
   switchSlide()
-}, 3000)
+}, 5000)
 
 const $indicator1 = document.querySelector('#left-indicator')
 const $indicator2 = document.querySelector('#center-indicator')
