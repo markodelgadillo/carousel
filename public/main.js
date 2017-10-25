@@ -62,11 +62,3 @@ $rightBut.addEventListener('click', function() {
 })
 
 console.log(carousel.slide.length)
-
-// my attemtp for indicators
-// console.log(carousel.current + 1)
-// console.log($indicator.dataset.id)
-// for ($indicator.dataset.id === carousel.current + 1) {
-//   $indicator.classList.remove('fa-circle-thin')
-//   $indicator.classList.add('fa-circle')
-// }
