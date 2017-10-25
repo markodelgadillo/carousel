@@ -28,12 +28,34 @@ img {
 }
 
 .left-but {
+  color: #e5deca;
   position: absolute;
   top: 50%;
+  left: 33%;
   transform: translateY(-50%);
   z-index: 1;
 }
 
 .right-but {
+  color: #e5deca;
+  position: absolute;
+  top: 50%;
+  right: 33%;
+  transform: translateY(-50%);
   z-index: 1;
+}
+
+.indicator {
+  color: #e5deca;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+}
+
+#left-indicator {
+  transform: translateX(-100%);
+}
+
+#right-indicator {
+  transform: translateX(100%);
 }
