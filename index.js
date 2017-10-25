@@ -1,5 +1,6 @@
 const { MongoClient } = require('mongodb')
 const express = require('express')
+const seed = require('./seed.js')
 const app = express()
 const path = require('path')
 app.use(express.static('./public'))
@@ -14,12 +15,13 @@ MongoClient.connect('mongodb://localhost/library', function(err, db) {
 
   app.get('/images', function(req, res) {
     console.log('Getting stuff...')
-    // images
-    // .find({})
-    // .toArray()
-    // .then(function(images) {
-    //   res.send() // sending the images to the front
-    // })
+    images
+      .find({}, { _id: 0 })
+      .toArray()
+      .then(images => {
+        res.send(images)
+      })
+      .catch(err => console.error(err))
   })
 
   app.listen(7777, function() {

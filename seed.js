@@ -14,17 +14,17 @@ const seed = (module.exports = MongoClient.connect(
     images.insertMany([
       {
         id: 1,
-        image: ''
+        image: 'puppy1.png'
       },
 
       {
         id: 2,
-        image: ''
+        image: 'puppy2.png'
       },
 
       {
         id: 3,
-        image: ''
+        image: 'puppy3.png'
       }
     ])
     db.close()
